@@ -1,0 +1,29 @@
+body {
+    padding: 50px;
+}
+
+.trigger {
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+    background: #ddd;
+}
+
+.box {
+    display:inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms cubic-bezier(0, 0.47, 0.32, 1.97);
+    pointer-events: none;     /*if not here then hovering over the translated box would include the triggered behavior*/
+}
+
+/*.trigger:hover .box{*/
+    /*transform: translate(200px,150px) rotate(20deg);*/
+/*}*/
+
+.trigger.clicked .box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
+
+

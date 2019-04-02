@@ -1,0 +1,60 @@
+body {
+    padding: 50px;
+    margin: 0;
+}
+
+
+.box {
+    display:inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    /*EXAMPLE 1:*/
+    /*animation-name: frames;*/
+    /*animation-duration: 2s;*/
+    /*animation-timing-function: ease-in-out;*/
+    /*animation-delay: 0s;                        !*how long to weight before animation starts*!*/
+    /*animation-iteration-count: infinite;        !*number of iterations before stopping. can be infinity*!*/
+    /*animation-direction: alternate;             !*can make play in normal, reverse or alternate *!*/
+    /*animation-fill-mode: forwards;              !*what it looks like after completed*!*/
+
+    animation-name: frames;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;                        /*how long to weight before animation starts*/
+    animation-iteration-count: 1;               /*number of iterations before stopping. can be infinity*/
+    animation-direction: normal;                /*can make play in normal, reverse or alternate */
+    animation-fill-mode: forwards;              /*what it looks like after completed*/
+}
+
+.box.is-paused {
+    animation-play-state: paused
+}
+
+@keyframes frames {
+    /*EXAMPLE 1:*/
+    /*0% {*/
+        /*height: 200px*/
+    /*}*/
+    /*30%, 70%{*/
+        /*height: 400px*/
+    /*}*/
+    /*100% {*/
+        /*height: 600px;*/
+        /*background: orange;*/
+    /*}*/
+
+    /*EXAMPLE 2:*/
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
