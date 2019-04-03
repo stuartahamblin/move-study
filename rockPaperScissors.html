@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rockPaperScissors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col l4">
+            <div class="row">
+                <h2>Player: <span id="player-throws-left"></span></h2>
+            </div>
+            <div class="row">
+                <div class="col l6">
+                    <a onclick="attack('rock')" class="waves-effect waves-light btn">Rock</a>
+                    <a onclick="attack('paper')" class="waves-effect waves-light btn">Paper</a>
+                    <a onclick="attack('scissors')" class="waves-effect waves-light btn">Scissors</a>
+                </div>
+                <div class="col l6">
+                    <h3 id="player-choice"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 offset-l4">
+            <h2>Opponent: <span id="opponent-throws-left"></span></h2>
+            <h3 id="opponent-choice"></h3>
+        </div>
+    </div>
+</div>
+<script src="js/rockPaperScissors.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
